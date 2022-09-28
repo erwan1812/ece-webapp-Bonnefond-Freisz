@@ -2,7 +2,6 @@
 
 Bienvenue dans notre repository Webapp.
 
-test
 
 ## Contributeurs
 - Henri Freisz
