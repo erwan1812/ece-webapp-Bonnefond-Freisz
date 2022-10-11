@@ -2,8 +2,7 @@ const express = require('express')
 const app = express()
 
 app.get(
-  '/hello/:name', 
-  serverHandles ,function (req, res) {
+  '/hello/:name' ,function (req, res) {
     res.send("Hello " + req.params.name)
   }
 )
