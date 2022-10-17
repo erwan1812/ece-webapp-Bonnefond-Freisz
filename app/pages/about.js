@@ -16,14 +16,6 @@ function About() {
             Voici notre projet "app".
         </p> 
         </div>
-       
-        <ul>
-            <li>
-                <Link href="/">
-                     <a>Home</a>
-                </Link>
-            </li>
-        </ul>
     </body>
     </>)
   }
