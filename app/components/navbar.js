@@ -4,7 +4,7 @@ function Navbar(){
     return(
         <ul>
         <li>
-          <Link href="/index">
+          <Link href="/">
             <a>Home</a>
           </Link>
         </li>
