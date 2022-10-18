@@ -15,14 +15,6 @@ function Contacts() {
         </div>
         <p><a href='erwan.bonnefond@edu.ece.fr'>Contactez Erwan</a></p>
         <p><a href='henri.freisz@edu.ece.fr'>Contactez Henri</a></p>     
-       
-        <ul>
-            <li>
-                <Link href="/">
-                     <a>Home</a>
-                </Link>
-            </li>
-        </ul>
     </body>
     </>)
   }

@@ -1,28 +1,39 @@
-import Head from "next/head";
-import Link from "next/link";
-import {useState, useEffect} from 'react'
+import { useRouter } from "next/router";
 
-export default function article({posts}) {
-    const [posts, setPosts] = useState([])
+const ROUTE_POST_ID = "posts/[id]";
+const posts = [
+  {
+    id: '1',
+    title: 'My article',
+    content: 'Content of the article.',
+    date: '04/10/2022',
+    author: 'Liz Gringer'
+  },
+  {
+    id: '2',
+    title: 'my article 2',
+    content: 'Content of the comment.',
+    date: '17/10/2022',
+    author: 'Bob McLaren'
+  }
+];
+export default function Home() {
+  const router = useRouter();
 
- useEffect(() => {
-    const data = fetch('https://jsonplaceholder.typicode.com/posts?_limit=4')
-    .then(r=> r.json())
-    .then(setPosts)
- }, [])
+  const navigate = (id) =>
+    router.push({
+      pathname: ROUTE_POST_ID,
+      query: { id }
+    });
 
-    return(
-        <>
-        <Head>
-            <title>mes articles</title>
-        </Head>
-        <ul>
-            {posts.map(post => <li>
-                <h3>{post.title}</h3>
-
-            </li>)}
-            <li></li>
-        </ul>
-        </>
-    )
+  return (
+    <div>
+      <h1>Voici nos articles</h1>
+      {posts.map((post) => (
+        <div key={`post-${post.id}`}>
+          <button onClick={() => navigate(post.id)}>{post.title}</button>
+        </div>
+      ))}
+    </div>
+  );
 }
