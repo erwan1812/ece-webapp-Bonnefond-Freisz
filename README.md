@@ -9,7 +9,7 @@ Les tp 1 à 3 sont enregistrés dans le dossier [server](https://github.com/erwa
 ### Etat du projet
 
 Notre application web est pour l'instant capable d'afficher ses premières pages et utilise des components partagés pour chaque page (footer,header,navbar).
-## 2.Installation
+## 2. Installation
 Pour accéder à notre application, les prérequis ci-dessous sont nécessaires :
 ```bash
 git clone https://github.com/erwan1812/ece-webapp-Bonnefond-Freisz.git
@@ -24,7 +24,7 @@ npm install
 #ou
 npm i
 ```
-## 3.Utilisation
+## 3. Utilisation
 Pour pouvoir utiliser notre application une fois placer sur l'appli  [app](https://github.com/erwan1812/ece-webapp-Bonnefond-Freisz/tree/master/app), il faudra lancer la commande ci-dessous :
 ```bash
 npm run dev
