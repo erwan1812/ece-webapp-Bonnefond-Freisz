@@ -5,7 +5,7 @@ export default function PostPage() {
   return (
     <>
   <div>Post # {router.query.id}</div>
-  <div>Title : {router.query.content}</div>
+  <div>Title : {router.query.title}</div>
     </>
   );
 }
