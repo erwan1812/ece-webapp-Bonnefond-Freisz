@@ -4,7 +4,7 @@ export default function PostPage() {
   const router = useRouter();
   return (
     <>
-  <div>Post # {router.query.id}</div>
+  <div>Article n° {router.query.id}</div>
   <div>Title : {router.query.title}</div>
     </>
   );

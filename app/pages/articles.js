@@ -31,7 +31,7 @@ export default function Home() {
       <h1>Voici nos articles</h1>
       {posts.map((post) => (
         <div key={`post-${post.id}`}>
-          <button onClick={() => navigate(post.id)}>{post.title}</button>
+          <button class="bg-blue-500 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded" onClick={() => navigate(post.id)}>{post.title}</button>
         </div>
       ))}
     </div>
