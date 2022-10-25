@@ -9,7 +9,7 @@ Les tp 1 à 3 sont enregistrés dans le dossier [server](https://github.com/erwa
 
 ### Etat du projet
 
-Notre application web est pour l'instant capable d'afficher ses premières pages et utilise des components partagés pour chaque page (Footer,Navbar).
+Notre application web est pour l'instant capable d'afficher ses premières pages, elle  utilise des components partagés pour chaque page (Footer,Navbar), puis on a stylisé nos pages avec tailwind.
 
 ## 2. Installation
 
