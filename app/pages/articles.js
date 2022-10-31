@@ -1,45 +1,36 @@
-import { useRouter } from "next/router";
+import Link from "next/link";
+import React, { useState } from "react";
 
-const ROUTE_POST_ID = "posts/[id]";
-const posts = [
-  {
-    id: '1',
-    title: 'My article',
-    content: 'Content of the article.',
-    date: '04/10/2022',
-    author: 'Liz Gringer'
-  },
-  {
-    id: '2',
-    title: 'my article 2',
-    content: 'Content of the comment.',
-    date: '17/10/2022',
-    author: 'Bob McLaren'
+function articles({ posts }) {
+  const [listOfPost, setListOfPost] = useState(posts);
+
+  const loadMore=async() => {
+    const res = await fetch("https://jsonplaceholder.typicode.com/posts?_limit=10&&_start=10");
+  const posts = await res.json();
+  setListOfPost((value) => [...value, ...posts]);
   }
-];
-export default function Home() {
-  const router = useRouter();
-
-  const navigate = (id) =>
-    router.push({
-      pathname: ROUTE_POST_ID,
-      query: { id }
-    });
-
   return (
-    <div>
-      <div class="h-20 w-1OO bg-slate-500 grid-cols-3 gap-4 content-center">
-          <div class="text-center mx-4 space-y-2 py-4">
-            <div class="text-black-600 text-5xl font-bold ">
-              Articles
-            </div>
-          </div>
-        </div>
-      {posts.map((post) => (
-        <div key={`post-${post.id}`}>
-          <button class="bg-blue-500 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded" onClick={() => navigate(post.id)}>{post.title}</button>
-        </div>
-      ))}
-    </div>
-  );
+    <ul>
+      {listOfPost.map((post, blog) => {
+        return (
+        <Link href={`../posts/${post.id}`} key={blog} passHref> 
+          <h2 key={blog}>
+            <li>{post.id}.{post.title}</li>
+          </h2>
+          </Link> 
+        );
+      })}
+      <button onClick={loadMore}>Load more</button>
+    </ul>
+    
+  )
 }
+
+export async function getStaticProps(context) {
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts?_limit=10");
+  const posts = await res.json();
+  return {
+    props: { posts },
+  }
+}
+export default articles
