@@ -20,6 +20,13 @@ function About() {
                         Nous sommes Erwan et Henri étudiants en 4ème année d'ingénieur à l'école ECE paris.
                         Etant dans la majeure SI, nous avons un projet web à faire pour la matière web-tech.
                         Voici notre projet "app".
+                        <div>
+                            <a href="/use_state/state">ici</a>
+                            <a href="/login_native/login">la</a>
+                            <a href="/login_controlled/login1">ou</a>
+                            <a href="/UserContext">auj</a>
+
+                        </div>
                     </div>
                 </div>
 
