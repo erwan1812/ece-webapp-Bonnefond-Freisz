@@ -32,10 +32,10 @@ export default function Navbar() {
 
   const [open, setOpen] = useState(false)
   return (
-    <nav className="flex filter drop-shadow-md bg-white px-4 py-4 h-20 items-center">
+    <nav className="dark:bg-gray-900 flex filter drop-shadow-md bg-white px-4 py-4 h-20 items-center">
       <MobileNav open={open} setOpen={setOpen} />
       <div className="w-3/12 flex items-center">
-        <a className="text-2xl font-semibold" href="/">Accueil</a>
+        <a className="dark:text-violet-600 text-2xl font-semibold" href="/">Accueil</a>
       </div>
       <div className="w-9/12 flex justify-end items-center">
 
@@ -50,13 +50,13 @@ export default function Navbar() {
 
         <div className="hidden md:flex">
           <NavLink to="/about" >
-            <a className="cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium">ABOUT</a>
+            <a className="dark:text-violet-600 dark:hover:bg-gray-600 cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium">ABOUT</a>
           </NavLink>
           <NavLink to="/contacts">
-          <a className="cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium">CONTACTS</a>
+          <a className="dark:text-violet-600 dark:hover:bg-gray-600 cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium">CONTACTS</a>
           </NavLink>
           <NavLink to="/articles">
-          <a className="cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium">ARTICLES</a>
+          <a className="dark:text-violet-600 dark:hover:bg-gray-600 cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium">ARTICLES</a>
           </NavLink>
         </div>
       </div>
