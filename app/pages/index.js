@@ -1,8 +1,11 @@
 import Head from 'next/head'
+import { supabase } from '../utils/supabase'
+
+//afficher le nom de l'utilisateur
 
 
-export default function Home({articles}) {
-  console.log(articles)
+export default function Home() {
+  console.log(supabase.auth.getUser())
   return (
     <>
       <Head>
@@ -15,6 +18,7 @@ export default function Home({articles}) {
             </div>
           </div>
         </div>
+
 
     </>
   )

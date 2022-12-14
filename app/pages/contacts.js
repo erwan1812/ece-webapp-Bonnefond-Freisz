@@ -7,9 +7,7 @@ function Contacts() {
             <Head>
                 <title>Contacts</title>
 
-            </Head>
-            <body>
-                
+            </Head>               
             <div class="h-20 w-1OO bg-lime-600 grid-cols-3 gap-4 content-center">
           <div class="text-center mx-4 space-y-2 py-4">
             <div class="text-black-600 text-5xl font-bold ">
@@ -38,8 +36,7 @@ function Contacts() {
                         </div>
                         <button class="px-4 py-1 text-sm text-blue-600 font-semibold rounded-full border border-blue-200 hover:text-white hover:bg-blue-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2">Message</button>
                     </div>
-                </div>
-            </body>
+                </div>       
         </>)
 }
 
