@@ -6,6 +6,7 @@ import { ContextProvider } from '../components/UserContext'
 import { ThemeProvider } from "next-themes";
 import { useState } from 'react'
 
+
 function MyApp({ Component, pageProps }) {
   const [supabase] = useState(() => createBrowserSupabaseClient())
   return (
@@ -13,9 +14,11 @@ function MyApp({ Component, pageProps }) {
       <ThemeProvider enableSystem={true} attribute="class">
 
         <ContextProvider>
+          
           <Layout>
             <Component {...pageProps} />
           </Layout>
+
         </ContextProvider>
 
       </ThemeProvider>
