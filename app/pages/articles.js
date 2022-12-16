@@ -21,7 +21,7 @@ function articles({ articles }) {
 
 
 export const getStaticProps = async () => {
-  const { data: articles } = await supabase.from('article').select('*')
+  const { data: articles } = await supabase.from('articles').select('*')
   return {
     props: {
       articles

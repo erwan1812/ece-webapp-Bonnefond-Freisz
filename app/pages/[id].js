@@ -5,13 +5,13 @@ const Article = ({ article }) => {
   return (
     <div className="w-full max-w-3xl mx-auto py-16 px-8">
       <h1 className="text-3xl mb-6">{article.title}</h1>
-      <p>{article.description}</p>
+      <p>{article.contents}</p>
     </div>
   );
 };
 
 export const getStaticPaths = async () => {
-  const { data: articles } = await supabase.from("article").select("id");
+  const { data: articles } = await supabase.from("articles").select("id");
 
   const paths = articles.map(({ id }) => ({
     params: {
@@ -27,7 +27,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params: { id } }) => {
   const { data: article } = await supabase
-    .from("article")
+    .from("articles")
     .select("*")
     .eq("id", id)
     .single();
