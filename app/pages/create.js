@@ -1,7 +1,8 @@
 import { supabase } from "../utils/supabase";
-import { useState,useEffect } from "react";
+import { useState,useEffect,useContext } from "react";
 import { useRouter } from "next/router";
 import Button from "../components/Button";
+import UserContext from "../components/UserContext";
 
 const Create = () => {
     const initialState = {
@@ -10,7 +11,7 @@ const Create = () => {
         categories: "",
     };
 
-    const[user, setUser] = useState({});
+    const {user}=useContext(UserContext);
     const router = useRouter();
     const [articleData, setarticleData] = useState(initialState);
 
@@ -19,17 +20,7 @@ const Create = () => {
     const handleChange = (e) => {
         setarticleData({ ...articleData, [e.target.name]: e.target.value });
     };
-    useEffect(() => {
-        async function getUserData() {
-            await supabase.auth.getUser().then((value) => {
-                if (value.data?.user) {
-                    console.log(value.data.user);
-                    setUser(value.data.user);
-                }
-            });
-        }
-        getUserData();
-    }, []);
+
 console.log(user);
 
     const createarticle = async () => {
