@@ -1,12 +1,10 @@
 import { useState } from 'react'
 
-
 function NavLink({ to, children }) {
   return <a href={to} className={`mx-4`}>
     {children}
   </a>
 }
-
 function MobileNav({ open, setOpen }) {
   return (
     <div className={`absolute top-0 left-0 h-screen w-screen bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
@@ -14,12 +12,6 @@ function MobileNav({ open, setOpen }) {
         <a className="text-xl font-semibold" href="/">Accueil</a>
       </div>
       <div className="flex flex-col ml-4">
-        <a className="cursor-pointer hover:bg-blue-600 opacity-50 text-xl font-medium my-4" href="/about" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
-          About
-        </a>
-        <a className="text-xl font-normal my-4" href="/contacts" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
-          Contact
-        </a>
         <a className="text-xl font-normal my-4" href="/articles" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
           Articles
         </a>
@@ -27,9 +19,7 @@ function MobileNav({ open, setOpen }) {
     </div>
   )
 }
-
 export default function Navbar() {
-
   const [open, setOpen] = useState(false)
   return (
     <nav className="dark:bg-gray-900 flex filter drop-shadow-md bg-white px-4 py-4 h-20 items-center">
@@ -49,14 +39,8 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex">
-          <NavLink to="/about" >
-            <a className="dark:text-violet-600 dark:hover:bg-gray-600 cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium">ABOUT</a>
-          </NavLink>
-          <NavLink to="/contacts">
-          <a className="dark:text-violet-600 dark:hover:bg-gray-600 cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium">CONTACTS</a>
-          </NavLink>
           <NavLink to="/articles">
-          <a className="dark:text-violet-600 dark:hover:bg-gray-600 cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium">ARTICLES</a>
+            <a className="dark:text-violet-600 dark:hover:bg-gray-600 cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium">ARTICLES</a>
           </NavLink>
         </div>
       </div>

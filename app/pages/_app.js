@@ -10,20 +10,15 @@ import { useState } from 'react'
 function MyApp({ Component, pageProps }) {
   const [supabase] = useState(() => createBrowserSupabaseClient())
   return (
-   <SessionContextProvider supabaseClient={supabase} initialSession={pageProps.initialSession}>
+    <SessionContextProvider supabaseClient={supabase} initialSession={pageProps.initialSession}>
       <ThemeProvider enableSystem={true} attribute="class">
-
         <ContextProvider>
-          
           <Layout>
             <Component {...pageProps} />
           </Layout>
-
         </ContextProvider>
-
       </ThemeProvider>
     </SessionContextProvider>
-
   )
 }
 

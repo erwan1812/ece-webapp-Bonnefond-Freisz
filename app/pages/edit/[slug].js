@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect, useState, useContext } from "react";
 import { supabase } from "../../utils/supabase";
-import { UserContext } from "../../components/UserContext";
 import Button from "../../components/Button";
 
 const Edit = () => {
@@ -9,20 +8,17 @@ const Edit = () => {
     const router = useRouter();
     const [user, setUser] = useState(null)
     const { slug } = router.query;
-
     useEffect(() => {
-      async function getUserData() {
-          await supabase.auth.getUser().then((value) => {
-              if (value.data?.user) {
-                  console.log(value.data.user);
-                  setUser(value.data.user);
-              }
-          });
-      }
-      getUserData();
-  }, []);
-
-
+        async function getUserData() {
+            await supabase.auth.getUser().then((value) => {
+                if (value.data?.user) {
+                    console.log(value.data.user);
+                    setUser(value.data.user);
+                }
+            });
+        }
+        getUserData();
+    }, []);
     useEffect(() => {
         const getArticle = async () => {
             if (!slug) return;
@@ -36,7 +32,6 @@ const Edit = () => {
         };
         getArticle();
     }, [slug]);
-
     const handleOnChange = (e) => {
         setArticle({
             ...article,
@@ -54,38 +49,39 @@ const Edit = () => {
             })
             .eq("id", slug)
             .eq("user_id", user?.id);
-
         alert("article updated successfully");
-
         router.push("/");
     };
     console.log(slug)
     return (
-        <div>
-            <div>
-                <h1>Edit article</h1>
-                <label> Title:</label>
+        <div className="w-full h-screen flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center w-96 h-96 border-2 border-solid border-indigo-600 rounded-rm">
+                <h1 className="text-3xl text-indigo-600 mb-4">Edit article</h1>
+                <label className="text-white mt-4"> Title:</label>
                 <input
                     type="text"
                     name="title"
                     value={article?.title}
                     onChange={handleOnChange}
+                    className="w-4/5 h-8 mt-4 border-2 border-solid border-indigo-600 rounded-md outline-0 bg-transparent text-white"
                 />
-                <label> Contents:</label>
+                <label className="text-white mt-4"> Contents:</label>
                 <input
                     type="text"
                     name="contents"
                     value={article?.contents}
                     onChange={handleOnChange}
+                    className="w-4/5 h-8 mt-4 border-2 border-solid border-indigo-600 rounded-md outline-0 bg-transparent text-white"
                 />
-                <label> categories:</label>
+                <label className="text-white mt-4"> Categories:</label>
                 <input
                     type="text"
                     name="categories"
                     value={article?.categories}
                     onChange={handleOnChange}
+                    className="w-4/5 h-8 mt-4 border-2 border-solid border-indigo-600 rounded-md outline-0 bg-transparent text-white"
                 />
-                <Button className="bg-gray-200 dark:bg-gray-600"
+                <Button className="bg-gray-200 dark:bg-gray-600 mt-4"
                     onClick={() => updateArticle()}>Update article
                 </Button>
             </div>

@@ -3,26 +3,21 @@ import { useState, useEffect, useContext } from "react";
 import Button from "../components/Button";
 import { useRouter } from "next/router";
 import UserContext from '../components/UserContext';
-import { supabase } from "../utils/supabase";
 
 const Header = () => {
   const { systemTheme, theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const router = useRouter();
   const { user, logout } = useContext(UserContext);
-
-  const onClickLogout = function() {
+  const onClickLogout = function () {
     logout()
   }
-
   useEffect(() => {
     setMounted(true);
   }, []);
   const renderThemeChanger = () => {
     if (!mounted) return null;
-
     const currentTheme = theme === 'system' ? systemTheme : theme;
-
     if (currentTheme === 'dark') {
       return (
         <Button className="bg-gray-200 dark:bg-gray-600"
@@ -45,33 +40,32 @@ const Header = () => {
       )
     }
   }
-
   return (
     <header className="dark:bg-gray-900 h-16 flex items-center justify-between">
       {renderThemeChanger()}
       {!user ? (
         <div>
-          <Button className="bg-gray-200 dark:bg-gray-600"
+          <Button className="bg-gray-200 dark:bg-gray-600 drop-shadow-xl dark:shadow-indigo-500/50 mr-10"
             onClick={() => router.push("/login")}>Login
           </Button>
         </div>
       ) : (
         <div>
 
-          <div>
-          <Button className="bg-gray-200 dark:bg-gray-600"
-          onClick={() => onClickLogout()}
-        >
-          Sign Out
-        </Button>
-            <Button className="bg-gray-200 dark:bg-gray-600"
+          <div className="mt-8 mb-4">
+            <h1 className="text-gray-900 dark:text-violet-600 mr-10 mt-2 font-bold">{user.email}</h1>
+            <Button className="bg-gray-200 dark:bg-gray-600 drop-shadow-xl dark:shadow-indigo-500/50 mr-6 mt-2 mb-2"
+              onClick={() => onClickLogout()}
+            >
+              Sign Out
+            </Button>
+            <Button className="bg-gray-200 dark:bg-gray-600 drop-shadow-xl dark:shadow-indigo-500/50 mr-6 mt-2 mb-2"
               onClick={() => router.push("/profile")}>Profile
             </Button>
           </div>
 
         </div>
       )}
-
     </header>
   )
 }
