@@ -19,11 +19,6 @@ export default function Layout({ children }) {
         </main>
         <Footer />
       </div>
-      <Head>
-        <title>Nextjs-Dev Blog</title>
-        <link rel="icon" href="/favicon.ico" />
-
-      </Head>
     </>
   )
 }
