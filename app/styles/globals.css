@@ -4,11 +4,11 @@
 
 
 .wt-title {
-    @apply text-3xl font-bold underline mb-10;
+    @apply text-xl font-bold underline mb-10;
   }
   @layer base {
     body {
-      @apply bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100;
+      @apply bg-blue-200 text-gray-900 dark:bg-gray-900 dark:text-gray-100;
       @apply min-h-screen;
     }
 
