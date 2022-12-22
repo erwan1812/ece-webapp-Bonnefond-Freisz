@@ -115,13 +115,12 @@ const Article = ({ article }) => {
             <h1 className="text-5xl mb-6 align-middle text-center tracking-wide font-bold uppercase drop-shadow-lg">{article.title}</h1>
             <p className="text-sm mb-6 align-middle text-center italic">{article.categories}</p>
             <p className="text-lg mb-6 text-justify">{article.contents}</p>
-            <p className="text-base mb-6 align-middle text-center italic">Pour laisser un commentaire il faut être connectés ce qui n'est pas votre cas </p>
+            <p className="text-base mb-6 align-middle text-center italic">To leave a comment you must be connected which is not your case</p>
             <CommentCardPublic data={comments} />
           </div>
         </>
       )}
     </div>
-
   );
 };
 

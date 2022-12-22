@@ -26,11 +26,11 @@ export default function Home({ articles }) {
               <div className='object-contain h-24 w-48 mr-6 ml-6 drop-shadow-2xl rounded-md'>
                 <Image src={henriImg} alt="Picture of the author" />
               </div>
-              <p className='text-xl dark:text-violet-600 text-black-200 font-mono leading-loose '>Me, it's Henri, I'm a 4th year student at the ECE.<br></br> I like computer development.</p>
+              <p className='text-xl dark:text-violet-600 text-black-200 font-mono leading-loose '>Me, {"It's"} Henri, {"I'm"} a 4th year student at the ECE.<br></br> I like computer development.</p>
               <div className='object-contain h-24 w-48 mr-6 ml-6 drop-shadow-2xl rounded-md'>
                 <Image src={erwanImg} alt="Picture of the author" />
               </div>
-              <p className='text-xl dark:text-violet-600 text-black-200 font-mono leading-loose '>Me, It's Erwan, I'm a 4th year student at the ECE.<br></br> I'm passionate about sports and I like computer development.</p>
+              <p className='text-xl dark:text-violet-600 text-black-200 font-mono leading-loose '>Me, {"It's"} Erwan, {"I'm"} a 4th year student at the ECE.<br></br> {"I'm"} passionate about sports and I like computer development.</p>
             </div>
           </div>
         </div>
