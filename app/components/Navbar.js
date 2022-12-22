@@ -9,12 +9,16 @@ function MobileNav({ open, setOpen }) {
   return (
     <div className={`absolute top-0 left-0 h-screen w-screen bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
       <div className="flex items-center justify-center filter drop-shadow-md bg-white h-20">
-        <a className="text-xl font-semibold" href="/">Accueil</a>
+        <NavLink to="/">
+          <a className="text-xl font-semibold">Accueil</a>
+        </NavLink>
       </div>
       <div className="flex flex-col ml-4">
-        <a className="text-xl font-normal my-4" href="/articles" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
-          Articles
-        </a>
+        <NavLink to="/articles" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
+          <a className="text-xl font-normal my-4" >
+            Articles
+          </a>
+        </NavLink>
       </div>
     </div>
   )
@@ -25,7 +29,9 @@ export default function Navbar() {
     <nav className="dark:bg-gray-900 flex filter drop-shadow-md bg-white px-4 py-4 h-20 items-center">
       <MobileNav open={open} setOpen={setOpen} />
       <div className="w-3/12 flex items-center">
-        <a className="dark:text-violet-600 text-2xl font-semibold" href="/">Accueil</a>
+        <NavLink to="/">
+          <a className="dark:text-violet-600 text-2xl font-semibold">Accueil</a>
+        </NavLink>
       </div>
       <div className="w-9/12 flex justify-end items-center">
 
