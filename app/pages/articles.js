@@ -9,7 +9,7 @@ function articles({ articles }) {
         {articles.map((article) => (
           <Link key={article.id} href={`/${article.id}`}>
             <a className="p-8 h-40 mb-4 items-center justify-center rounded shadow text-xl flex dark:shadow-indigo-500/50 ">
-              <span class="text-center align-middle uppercase">{article.title}</span>
+              <span className="text-center align-middle uppercase">{article.title}</span>
             </a>
           </Link>
         ))}
