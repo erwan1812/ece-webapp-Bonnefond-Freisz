@@ -8,8 +8,8 @@ export default function Layout({ children }) {
   return (
     <>
       <Head>
-        <title>Next Tailwind Theme</title>
-        <meta name="description" content="Create dark mode in next and tailwind" />
+        <title>Nextjs-Dev Blog</title>
+        <meta name="description" content="Our Blog App" />
       </Head>
       <Navbar />
       <div className="min-h-screen flex flex-col">
