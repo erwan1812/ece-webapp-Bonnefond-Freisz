@@ -1,4 +1,4 @@
-# Projet Web
+# Blogging application - ECE Webtech Project
 
 Bienvenue dans notre Projet Webapp.
 
@@ -7,38 +7,94 @@ Bienvenue dans notre Projet Webapp.
 Projet Web de la majeure SI
 Les tp 1 à 3 sont enregistrés dans le dossier [server](https://github.com/erwan1812/ece-webapp-Bonnefond-Freisz/tree/master/server), alors que le tp sur next.js est dans le dossier [app](https://github.com/erwan1812/ece-webapp-Bonnefond-Freisz/tree/master/app).
 
-### Etat du projet
+## Production
 
-Notre application web est pour l'instant capable d'afficher ses premières pages, elle  utilise des components partagés pour chaque page (Footer,Navbar), puis on a stylisé nos pages avec tailwind.
+- Vercel URL :
+- Supabase Project URL : <https://app.supabase.com/project/ipyfukskwtqyzorpxhkv>
 
-## 2. Installation
+## Usage
 
-Pour accéder à notre application, les prérequis ci-dessous sont nécessaires :
+- Pour accéder à notre application, les prérequis ci-dessous sont nécessaires :
 
 ```bash
 git clone https://github.com/erwan1812/ece-webapp-Bonnefond-Freisz.git
 
 cd app
-
-npm install
 ```
 
-## 3. Utilisation
+- Lancer l'application :
+
+  ```bash
+
+  cd app
+  # Install dependencies (use yarn or npm)
+    npm install
+    npm run build
+    npm start
+    ```
+
+- Utilisation
 
 Pour pouvoir utiliser notre application une fois placer sur l'appli  [app](https://github.com/erwan1812/ece-webapp-Bonnefond-Freisz/tree/master/app), il faudra lancer la commande ci-dessous :
 
 ```bash
-npm run dev
-# ou si vous avez installé yarn
-yarn dev
+    npm run dev
+    # ou si vous avez installé yarn
+    yarn dev
+    ## Auteurs
 ```
 
 Il faudra ensuite lancer votre [localhost](http://localhost:3000) pour pouvoir utiliser notre application.
 
-**Bonne découverte !**
-
-## Contributeurs
+## Auteurs
 
 - [Henri Freisz](https://github.com/henrifreisz)
 - [Erwan Bonnefond](https://github.com/erwan1812)
-  
+
+## Tasks
+
+### Project Management
+
+- Naming convention
+
+- Project structure
+
+- Git
+
+- Code quality
+
+- Design, UX and Content
+
+### Application development
+
+- Home page
+
+- Login/Profile Page
+
+- New articles creation
+
+- New comment creation
+
+- Ressource Access Control
+
+- Article Modification
+
+- Article Removal
+
+- Comment Modification
+
+- Comment Removal
+
+- Account Settings
+
+- WYSIWYG integration
+
+- Gravatar integration
+
+- Light/dark theme
+
+- Accent color selection
+
+## Bonus
+
+**Bonne découverte !**
