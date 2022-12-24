@@ -77,7 +77,7 @@ Sinon, nous vous invitons à vous rendre sur ce lien [Vercel](https://ece-webapp
 
 - [Henri Freisz](https://github.com/henrifreisz)
   
-   [henri.freisz@edu.ece.fr](henri.freisz@edu.ece.fr)
+  [henri.freisz@edu.ece.fr](henri.freisz@edu.ece.fr)
 
 - [Erwan Bonnefond](https://github.com/erwan1812)
 
