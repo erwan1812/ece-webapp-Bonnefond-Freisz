@@ -56,13 +56,13 @@ const Edit = () => {
         <div className="w-full h-screen flex flex-col justify-center items-center">
             <div className="flex flex-col justify-center items-center w-96 h-96 border-2 border-solid border-indigo-600 rounded-rm">
                 <h1 className="text-3xl text-indigo-600 mb-4">Edit Comment</h1>
-                <label className="text-black mt-4"> Contents:</label>
+                <label className="text-black dark:text-white mt-4"> Contents:</label>
                 <input
                     type="text"
                     name="contents"
                     value={comment?.contents}
                     onChange={handleOnChange}
-                    className="w-4/5 h-8 mt-4 border-2 border-solid border-indigo-600 rounded-md outline-0 bg-transparent text-black"
+                    className="w-4/5 h-8 mt-4 border-2 border-solid border-indigo-600 rounded-md outline-0 bg-transparent text-black dark:text-white"
                 />
                 <Button className="bg-gray-200 dark:bg-gray-600 mt-4"
                     onClick={() => updateComment()}>Update article

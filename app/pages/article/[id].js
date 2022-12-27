@@ -94,14 +94,14 @@ const Article = ({ article }) => {
           <div className="flex flex-col items-center">
             <h1 className="text-center mt-4">Here are your comments</h1>
             <CommentCard data={comments} handleDelete={handleDelete} />
-            <label className="text-white mt-10 mr-4 ml-4">Comment :</label>
+            <label className="text-black dark:text-white mt-10 mr-4 ml-4">Comment :</label>
             <input
               type="text"
               name="contents"
               value={contents}
               onChange={handleChange}
               placeholder="Enter comment"
-              className="w-full max-w-[50%] h-8 mt-4 border-2 border-solid border-indigo-600 rounded-md outline-0 bg-transparent text-white"
+              className="w-full max-w-[50%] h-8 mt-4 border-2 border-solid border-indigo-600 rounded-md outline-0 bg-transparent text-black dark:text-white"
             />
 
             <Button className="bg-gray-200 dark:bg-gray-600 mt-4 ml-4"
