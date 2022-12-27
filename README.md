@@ -103,7 +103,7 @@ Sinon, nous vous invitons à vous rendre sur ce lien [Vercel](https://ece-webapp
 
 - Code quality
   
-  Points: 3. La qualité du code a été respectée au maximum. Cependant il se peut qu'il y ai des coquilles dan l'indentation et dans l'espacement des lignes.
+  Points: 3. La qualité du code a été respectée au maximum. Cependant il se peut qu'il y ai des coquilles dans l'indentation et dans l'espacement des lignes.
 
 - Design, UX and Content
 
