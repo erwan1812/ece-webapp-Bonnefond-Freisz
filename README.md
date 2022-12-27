@@ -16,11 +16,11 @@ Tout d'abord, notre application implémente un blog, il fournit aux utilisateurs
 
 Un utilisateur a la possibilité de s'authentifier via son compte github. Une fois fait, il pourra aussi avoir accès à tout les articles créés par lui dans la rubrique `Profile` puis dans son `Dashboard`. Tout ses articles seront affichés, avec la possibilité de les supprimer ou modifier. S'il n'en a pas il pourra en créer.
 
-Si il veut avoir accès à l'ensmble des articles crée par les différents utilisateurs de l'application, il suffira d'aller dans la rubrique `Articles` en haut à droite de son écran.
+S'il veut avoir accès à l'ensemble des articles créés par les différents utilisateurs de l'application, il suffira d'aller dans la rubrique `Articles` en haut à droite de son écran.
 
-Il lui faudra cliquer sur le titre de l'article de son choix pour le consulter. S'il le souhaite laisser un commentaire qu'il pourra modifier ou supprimer s'il en a l'envie.
+Il lui faudra cliquer sur le titre de l'article de son choix pour le consulter. S'il le souhaite, il peut laisser un commentaire qu'il pourra modifier ou supprimer s'il en a l'envie.
 
-Un utilisateur non authentifié pourra lui aussi accéder à ces articles. Cependant, il n'aura la possibilité de laisser un commentaire. Il pourra aussi consulter ceux des autres utilisateurs.
+Un utilisateur non authentifié pourra lui aussi accéder à ces articles. Cependant, il n'aura pas la possibilité de laisser un commentaire. Il pourra aussi consulter ceux des autres utilisateurs.
 
 ## 3. Remarques
 
