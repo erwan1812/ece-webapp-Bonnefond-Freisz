@@ -14,7 +14,9 @@ Bonjour et Bienvenue, nous allons vous faire une courte présentation de notre a
 
 Tout d'abord, notre application implémente un blog, il fournit aux utilisateurs des articles traitants de différents sujets réalisés par d'autre utilisateurs.
 
-Un utilisateur a la possibilité de s'authentifier via son compte github. Une fois fait, il pourra aussi avoir accès à tout les articles créés par lui et les autres utilisateurs, il suffira d'aller dans la rubrique `Articles` en haut à droite de son écran.
+Un utilisateur a la possibilité de s'authentifier via son compte github. Une fois fait, il pourra aussi avoir accès à tout les articles créés par lui dans la rubrique `Profile` puis dans son `Dashboard`. Tout ses articles seront affichés, avec la possibilité de les supprimer ou modifier. S'il n'en a pas il pourra en créer.
+
+Si il veut avoir accès à l'ensmble des articles crée par les différents utilisateurs de l'application, il suffira d'aller dans la rubrique `Articles` en haut à droite de son écran.
 
 Il lui faudra cliquer sur le titre de l'article de son choix pour le consulter. S'il le souhaite laisser un commentaire qu'il pourra modifier ou supprimer s'il en a l'envie.
 

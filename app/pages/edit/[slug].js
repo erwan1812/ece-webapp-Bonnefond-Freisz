@@ -57,29 +57,29 @@ const Edit = () => {
         <div className="w-full h-screen flex flex-col justify-center items-center">
             <div className="flex flex-col justify-center items-center w-96 h-96 border-2 border-solid border-indigo-600 rounded-rm">
                 <h1 className="text-3xl text-indigo-600 mb-4">Edit article</h1>
-                <label className="text-white mt-4"> Title:</label>
+                <label className="text-black mt-4"> Title:</label>
                 <input
                     type="text"
                     name="title"
                     value={article?.title}
                     onChange={handleOnChange}
-                    className="w-4/5 h-8 mt-4 border-2 border-solid border-indigo-600 rounded-md outline-0 bg-transparent text-white"
+                    className="w-4/5 h-8 mt-4 border-2 border-solid border-indigo-600 rounded-md outline-0 bg-transparent text-black"
                 />
-                <label className="text-white mt-4"> Contents:</label>
+                <label className="text-black mt-4"> Contents:</label>
                 <input
                     type="text"
                     name="contents"
                     value={article?.contents}
                     onChange={handleOnChange}
-                    className="w-4/5 h-8 mt-4 border-2 border-solid border-indigo-600 rounded-md outline-0 bg-transparent text-white"
+                    className="w-4/5 h-8 mt-4 border-2 border-solid border-indigo-600 rounded-md outline-0 bg-transparent text-black"
                 />
-                <label className="text-white mt-4"> Categories:</label>
+                <label className="text-black mt-4"> Categories:</label>
                 <input
                     type="text"
                     name="categories"
                     value={article?.categories}
                     onChange={handleOnChange}
-                    className="w-4/5 h-8 mt-4 border-2 border-solid border-indigo-600 rounded-md outline-0 bg-transparent text-white"
+                    className="w-4/5 h-8 mt-4 border-2 border-solid border-indigo-600 rounded-md outline-0 bg-transparent text-black"
                 />
                 <Button className="bg-gray-200 dark:bg-gray-600 mt-4"
                     onClick={() => updateArticle()}>Update article

@@ -44,32 +44,32 @@ const Create = () => {
             <div className="w-full h-screen flex flex-col justify-center items-center">
                 <div className="flex flex-col justify-center items-center w-96 h-96 border-2 border-solid border-indigo-600 rounded-rm">
                     <p className="text-3xl text-indigo-600 mb-4">Create a New article</p>
-                    <label className="text-white mt-4">Title:</label>
+                    <label className="text-black mt-4">Title:</label>
                     <input
                         type="text"
                         name="title"
                         value={title}
                         onChange={handleChange}
                         placeholder="Enter a title"
-                        className="w-4/5 h-8 mt-4 border-2 border-solid border-indigo-600 rounded-md outline-0 bg-transparent text-white"
+                        className="w-4/5 h-8 mt-4 border-2 border-solid border-indigo-600 rounded-md outline-0 bg-transparent text-black"
                     />
-                    <label className="text-white mt-4">Contents:</label>
+                    <label className="text-black mt-4">Contents:</label>
                     <input
                         type="text"
                         name="contents"
                         value={contents}
                         onChange={handleChange}
                         placeholder="Enter contents"
-                        className="w-4/5 h-8 mt-4 border-2 border-solid border-indigo-600 rounded-md outline-0 bg-transparent text-white"
+                        className="w-4/5 h-8 mt-4 border-2 border-solid border-indigo-600 rounded-md outline-0 bg-transparent text-black"
                     />
-                    <label className="text-white mt-4">categories:</label>
+                    <label className="text-black mt-4">categories:</label>
                     <input
                         type="text"
                         name="categories"
                         value={categories}
                         onChange={handleChange}
                         placeholder="Enter categories"
-                        className="w-4/5 h-8 mt-4 border-2 border-solid border-indigo-600 rounded-md outline-0 bg-transparent text-white"
+                        className="w-4/5 h-8 mt-4 border-2 border-solid border-indigo-600 rounded-md outline-0 bg-transparent text-black"
                     />
                     <Button className="bg-gray-200 dark:bg-gray-600 mt-4"
                         onClick={() => createarticle()}>Create article
