@@ -91,43 +91,81 @@ Sinon, nous vous invitons à vous rendre sur ce lien [Vercel](https://ece-webapp
 
 - Naming convention
 
+  Points: 2. Nous pensons avoir respecter les conventions de nomination des fichiers.
+
 - Project structure
+
+  Points: 2. Nous avons organiser la structure de notre projet comme démontrer sur le template.
 
 - Git
 
+  Points: 2. Les conventionnals Commits ont été respéctées.
+
 - Code quality
+  
+  Points: 3. La qualité du code a été respectée au maximum. Cependant il se peut qu'il y ai des coquilles dan l'indentation et dans l'espacement des lignes.
 
 - Design, UX and Content
+
+  Points: 2,5. Bonne utilisation de tailwind. Fier de notre design, mais nous pensons que par moment l'expérience utilisateur pourrait être amélioré.
 
 ### Application development
 
 - Home page
 
+  Points: 2. Home page informative à propos de nous et sur notre application.
+
 - Login/Profile Page
+
+  Points: 4. Login page utilise l'authentification via `github` et `supabase`. Et persiste l'utilisateur connecté sur sa profile page et header via usercontext.
 
 - New articles creation
 
+  Points: 5. L'utilisateur peut créer un article de puis son `dashboard` accessible depuis sa `profile page`. Cependant il n'a pas la possibilité d'annuler la création dun article via un bouton.
+
 - New comment creation
 
+  Points: 4. Un utilisateur peut laisser un commentaire sur un article, en le choisissant dans cette même rubrique.
+
 - Ressource Access Control
+  
+  Points: 6. Il utilise le mode `RLS` de `supabase`, et seul un utilisateur connecté peut créer un article ainsi qu'un commentaire.
 
 - Article Modification
 
+  Points: 4. Un utilisateur à la possibilité de modifier un article déjà crée depuis son `dashboard`.
+
 - Article Removal
 
+  Points: 2. Un utilisateur peut supprimer un article depuis son `dashboard`.
+
 - Comment Modification
+  
+  Points: 2. Un utilisateur peut modifier un commmentaire en accédant à l'article qu'il a commenté dans la rubrique `Articles`.
 
 - Comment Removal
+  
+  Points: 2. Un utilisateur peut supprimer un commmentaire en accédant à l'article qu'il a commenté dans la rubrique `Articles`.
 
 - Account Settings
+  
+  Points: 0. Pas réalisé.
 
 - WYSIWYG integration
+  
+  Points: 0. Pas réalisé.
 
 - Gravatar integration
 
+  Points: 0. Pas réalisé.
+
 - Light/dark theme
 
+  Points: 2. Implémentation d'un bouton Light/dark theme dans l'`header` de notre application.
+  
 - Accent color selection
+
+  Points: 0. Pas réalisé.
 
 ## Bonus
 
