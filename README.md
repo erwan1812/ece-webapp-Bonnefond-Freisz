@@ -167,6 +167,4 @@ Sinon, nous vous invitons à vous rendre sur ce lien [Vercel](https://ece-webapp
 
   Points: 0. Pas réalisé.
 
-## Bonus
-
 **Bonne découverte !**
