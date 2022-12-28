@@ -51,14 +51,14 @@ cd app
 
 - Lancer l'application :
 
-  ```bash
+```bash
 
   cd app
   # Install dependencies (use yarn or npm)
     npm install
     npm run build
     npm start
-    ```
+```
 
 - Utilisation
 
@@ -85,7 +85,7 @@ Sinon, nous vous invitons à vous rendre sur ce lien [Vercel](https://ece-webapp
 
   [erwan.bonnefond@edu.ece.fr](erwan.bonnefond@edu.ece.fr)
 
-## Tasks
+## Tasks: Self Evaluation
 
 ### Project Management
 
