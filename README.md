@@ -95,7 +95,7 @@ Sinon, nous vous invitons à vous rendre sur ce lien [Vercel](https://ece-webapp
 
 - Project structure
 
-  Points: 2. Nous avons organiser la structure de notre projet comme démontrer sur le template.
+  Points: 2. Nous avons organisé la structure de notre projet comme démontrer sur le template.
 
 - Git
 
@@ -117,7 +117,7 @@ Sinon, nous vous invitons à vous rendre sur ce lien [Vercel](https://ece-webapp
 
 - Login/Profile Page
 
-  Points: 4. Login page utilise l'authentification via `github` et `supabase`. Et persiste l'utilisateur connecté sur sa profile page et header via usercontext.
+  Points: 4. Login page utilise l'authentification via `github` et `supabase`. Il persiste l'utilisateur connecté sur sa profile page et header via usercontext.
 
 - New articles creation
 
@@ -133,7 +133,7 @@ Sinon, nous vous invitons à vous rendre sur ce lien [Vercel](https://ece-webapp
 
 - Article Modification
 
-  Points: 4. Un utilisateur à la possibilité de modifier un article déjà crée depuis son `dashboard`.
+  Points: 4. Un utilisateur a la possibilité de modifier un article déjà crée depuis son `dashboard`.
 
 - Article Removal
 
